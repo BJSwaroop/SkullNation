@@ -109,42 +109,6 @@ h1, h2, h3, h4, h5, h6 {
     transition-delay: 0 !important;
   }
 }
-/*--------------------------------------------------------------
-# Top Bar
---------------------------------------------------------------*/
-#topbar {
-  background: #191919;
-  font-size: 15px;
-  height: 40px;
-  padding: 0;
-  color: rgba(255, 255, 255, 0.6);
-}
-#topbar .contact-info a {
-  line-height: 0;
-  color: rgba(255, 255, 255, 0.6);
-  transition: 0.3s;
-}
-#topbar .contact-info a:hover {
-  color: #fff;
-}
-#topbar .contact-info i {
-  color: #cc1616;
-  line-height: 0;
-  margin-right: 5px;
-}
-#topbar .contact-info .phone-icon {
-  margin-left: 15px;
-}
-#topbar .social-links a {
-  color: rgba(255, 255, 255, 0.6);
-  padding: 4px 12px;
-  display: inline-block;
-  line-height: 1px;
-  transition: 0.3s;
-}
-#topbar .social-links a:hover {
-  color: #fff;
-}
 
 /*--------------------------------------------------------------
 # Header
@@ -207,10 +171,13 @@ h1, h2, h3, h4, h5, h6 {
   padding: 25px 3rem 24px 3rem;
   font-weight: 800;
   font-size: 14px;
-  color: #fff;
   white-space: nowrap;
   transition: 0.3s;
 }
+.discord, .twitter{
+  color: white;
+}
+
 .nletter{
   height: 50vh;
   width: 100%;
@@ -273,7 +240,9 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-direction: column;
 }
-
+.navbar-default.scrolled{
+  background:#000;
+}
 @media (max-width: 1366px) {
   .navbar .dropdown .dropdown ul {
     left: -90%;
@@ -331,14 +300,12 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 15px;
   left: 15px;
   padding: 10px 0;
-  background-color: #fff;
   overflow-y: auto;
   transition: 0.3s;
 }
+
 .navbar-mobile a, .navbar-mobile a:focus {
-  padding: 10px 20px;
   font-size: 15px;
-  color: #191919;
 }
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
   color: #cc1616;
@@ -360,6 +327,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 .navbar-mobile .dropdown ul li {
   min-width: 200px;
+}
+.menu{
+  background-color: white;
+  color: #000;
 }
 .navbar-mobile .dropdown ul a {
   padding: 10px 20px;
@@ -408,35 +379,40 @@ h1, h2, h3, h4, h5, h6 {
 }
 #hero .btn-get-started {
   font-family: "Raleway", sans-serif;
+  border: none;
+  padding: 1.5rem 13rem;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.5px;
-  display: inline-block;
-  padding: 10px 28px;
   transition: 0.5s;
-  border: 2px solid #fff;
+  border: 2px solid #cc1616;
+  background-color: #cc1616;
   color: #fff;
 }
 #hero .btn-get-started:hover {
-  background: #cc1616;
-  border-color: #cc1616;
+  background: #000;
+  border-color: #fff;
 }
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
   }
+
 }
 @media (max-width: 768px) {
   #hero {
     text-align: center;
   }
+  #hero .btn-get-started {
+    padding: 18px 80px;
+  }
   #hero .container {
     padding-top: 40px;
   }
   #hero h1 {
-    font-size: 28px;
-    line-height: 36px;
+    font-size: 5rem;
+    line-height: 2rem;
   }
   #hero h2 {
     font-size: 18px;

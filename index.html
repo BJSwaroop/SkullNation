@@ -9,7 +9,7 @@
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/favicon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -37,12 +37,14 @@
 
 
   <!-- ======= Header ======= -->
-  <header id="header" class="d-flex align-items-center">
+  <header id="header" class="d-flex align-items-center  navbar-default navbar-fixed-top">
     <div class="container cont d-flex align-items-center justify-content-between">
-
-      <h1 class="logo"><a href="index.html">Skull Nation</a></h1>
+      <div style="display: flex; width: 20rem; justify-content: space-around; align-items: center;">
+        <a href="index.html" class="logo"><img src="assets/img/favicon.png" alt="" class="img-fluid"></a>
+        
+        <h1 class="logo"><a href="index.html">Skull Nation</a></h1>
+      </div>
       <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav id="navbar" class="navbar">
         <ul>
@@ -64,9 +66,11 @@
       <h1>Nation</h1>
       <br>
       <br>
-      <h2>Skullnation is a project under Onecult.
+      <h2 style="margin-bottom: 5px;">Skullnation is a project under <b style="color: #ff1919;">Onecult</b>.
       </h2>
-      <a href="#about" class="btn-get-started scrollto">Get Started</a>
+      <p style="color: white;">One cult is an Online Community offering a private place online where people can exchange ideas, share experiences, and offer each other guidance. The community’s mission is to help new projects by providing them support.</p>
+      <br>
+      <a href="#about" class="btn-get-started scrollto">Get Involved</a>
     </div>
   </section><!-- End Hero -->
 
@@ -82,24 +86,24 @@
 
           <div class="col-lg-4" data-aos="fade-up">
             <div class="box">
-              <span data-aos="fade-up">1</span>
-              <h2 data-aos="fade-up" style="font-weight: bold;">Creative Control</h2>
+              <span >1</span>
+              <h2  style="font-weight: bold;">Creative Control</h2>
               <!-- <p>Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat</p> -->
             </div>
           </div>
 
           <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="150">
             <div class="box">
-              <span data-aos="fade-up">1</span>
-              <h2 data-aos="fade-up" style="font-weight: bold;">Rewarding Holders</h2>
+              <span >1</span>
+              <h2  style="font-weight: bold;">Rewarding Holders</h2>
               <!-- <p>Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis dolor quod et vel dire leno para dest</p> -->
             </div>
           </div>
 
           <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
             <div class="box">
-              <span data-aos="fade-up">1</span>
-              <h2 data-aos="fade-up" style="font-weight: bold;"> Community Support</h2>
+              <span >1</span>
+              <h2  style="font-weight: bold;"> Community Support</h2>
               <!-- <p>Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis</p> -->
             </div>
           </div>
@@ -171,9 +175,9 @@
 
 
 
-            <form action="" method="post">
+            <form data-aos="fade-up" action="" method="post">
               <div style="width: 80vw;" class="input-group mb-3 mt-4"> 
-                <input data-aos="fade-up" style="height:4rem;" type="email" class="form-control" placeholder="Enter email" aria-label="Recipient's username" aria-describedby="button-addon2"> 
+                <input  style="height:4rem;" type="email" class="form-control" placeholder="Enter email" aria-label="Recipient's username" aria-describedby="button-addon2"> 
                 <button class="btnu " type="submit" id="button-addon2">Subscribe</button> </div>
             </form>
           </div>
@@ -277,7 +281,7 @@
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
   <div id="preloader"></div>
-
+ 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
