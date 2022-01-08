@@ -34,7 +34,7 @@ h1, h2, h3, h4, h5, h6 {
   position: fixed;
   visibility: hidden;
   opacity: 0;
-  right: 15px;
+  left: 45%;
   bottom: 15px;
   z-index: 996;
   background-color: #cc1616;
@@ -252,6 +252,9 @@ h1, h2, h3, h4, h5, h6 {
   .navbar .dropdown .dropdown:hover > ul {
     left: -100%;
   }
+  .back-to-top{
+    left: 40%;
+  }
 }
 
 /**
@@ -405,6 +408,9 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 768px) {
   #hero {
     text-align: center;
+  }
+  .back-to-top{
+    left: 32%;
   }
   #hero .btn-get-started {
     padding: 18px 80px;
